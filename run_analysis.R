@@ -1,14 +1,13 @@
-The_Cleaner<-function(){
-        
+Victor_The_Cleaner<-function(){
+        ## The following files read the required data tables
         test_X<-read.table("./UCI HAR Dataset/test/X_test.txt")
         test_Y<-read.table("./UCI HAR Dataset/test/y_test.txt")
         test_subj<-read.table("./UCI HAR Dataset/test/subject_test.txt")
-        
         train_X<-read.table("./UCI HAR Dataset/train/X_train.txt")
         train_Y<-read.table("./UCI HAR Dataset/train/y_train.txt")
-        train_subj<-read.table("./UCI HAR Dataset/train/subject_train.txt")
-        
+        train_subj<-read.table("./UCI HAR Dataset/train/subject_train.txt")      
         names<-read.table("./UCI HAR Dataset/features.txt")
+        ## The following gives headers to the raw data
         colnames(test_X)<-names$V2
         colnames(train_X)<-names$V2
         
@@ -75,5 +74,5 @@ The_Cleaner<-function(){
         names(large_merged)<-gsub("\\()","",names(large_merged))
         names(large_merged)<-gsub("-","",names(large_merged))
         
-        Activity_averages<-summarise_each(group_by(large_merged,subject,activity,group),funs(mean))
+        Activity_averages<<-summarise_each(group_by(large_merged,subject,activity,group),funs(mean))
 }
