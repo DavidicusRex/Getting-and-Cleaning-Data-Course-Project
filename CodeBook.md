@@ -13,138 +13,78 @@ Indicates one of the six activities volunteers were asked to perform: Walking, W
 
 Thirty percent of the volunteers were selected to generate the TEST data, while the remaining 70% were selected to generate the TRAINING data.
 
+4 axis
+
+Observation was captured through 3 axial signals: X, Y, and Z. This column represents the signal axis.
+
 Remaining variables: 
 
-Variables represent the average mean (mean) and standard deviation (std) of the Samsung Galaxy S II's embedded accelerometer (Acc) and gyroscope (Gyro) for 3-axial signals (X, Y, and Z). S
+Variables represent the average, broken down by subject and activity, of the mean (mean) and standard deviation (std) of the Samsung Galaxy S II's embedded accelerometer (Acc) and gyroscope (Gyro). 
 
-4  tBodyAccmeanX
+5 tBodyAccmean
 
-5  tBodyAccmeanY
+6 tBodyAccstd
 
-6  tBodyAccmeanZ
+7 tGravityAccmean
 
-7  tBodyAccstdX
+8 tGravityAccstd
 
-8  tBodyAccstdY
+9 tBodyAccJerkstdX
 
-9  tBodyAccstdZ
+10 tBodyAccJerkstd
 
-10 tGravityAccmeanX
+11 tBodyGyromean
 
-11 tGravityAccmeanY
+12 tBodyGyrostd
 
-12 tGravityAccmeanZ
+13 tBodyGyroJerkmean
 
-13 tGravityAccstdX
+14 tBodyGyroJerkstd
 
-14 tGravityAccstdY
+15 tBodyAccMagmean
 
-15 tGravityAccstdZ
+16 tBodyAccMagstd
 
-16 tBodyAccJerkmeanX
+17 tGravityAccMagmean
 
-17 tBodyAccJerkmeanY
+18 tGravityAccMagstd
 
-18 tBodyAccJerkmeanZ
+19 tBodyAccJerkMagmean
 
-19 tBodyAccJerkstdX
+20 tBodyAccJerkMagstd
 
-20 tBodyAccJerkstdY
+21 tBodyGyroMagmean
 
-21 tBodyAccJerkstdZ
+22 tBodyGyroMagstd
 
-22 tBodyGyromeanX
+23 tBodyGyroJerkMagmean
 
-23 tBodyGyromeanY
+24 tBodyGyroJerkMagstd
 
-24 tBodyGyromeanZ
+25 fBodyAccmean
 
-25 tBodyGyrostdX
+26 fBodyAccstd
 
-26 tBodyGyrostdY
+27 fBodyAccJerkmean
 
-27 tBodyGyrostdZ
+28 fBodyAccJerkstd
 
-28 tBodyGyroJerkmeanX
+29 fBodyGyromean
 
-29 tBodyGyroJerkmeanY
+30 fBodyGyrostd
 
-30 tBodyGyroJerkmeanZ
+31 fBodyAccMagmean
 
-31 tBodyGyroJerkstdX
+32 fBodyAccMagstd
 
-32 tBodyGyroJerkstdY
+33 fBodyBodyAccJerkMagmean
 
-33 tBodyGyroJerkstdZ
+34 fBodyBodyAccJerkMagstd
 
-34 tBodyAccMagmean
+35 fBodyBodyGyroMagmean
 
-35 tBodyAccMagstd
+36 fBodyBodyGyroMagstd
 
-36 tGravityAccMagmean
+37 fBodyBodyGyroJerkMagmean
 
-37 tGravityAccMagstd
-
-38 tBodyAccJerkMagmean
-
-39 tBodyAccJerkMagstd
-
-40 tBodyGyroMagmean
-
-41 tBodyGyroMagstd
-
-42 tBodyGyroJerkMagmean
-
-43 tBodyGyroJerkMagstd
-
-44 fBodyAccmeanX
-
-45 fBodyAccmeanY
-
-46 fBodyAccmeanZ
-
-47 fBodyAccstdX
-
-48 fBodyAccstdY
-
-49 fBodyAccstdZ
-
-50 fBodyAccJerkmeanX
-
-51 fBodyAccJerkmeanY
-
-52 fBodyAccJerkmeanZ
-
-53 fBodyAccJerkstdX
-
-54 fBodyAccJerkstdY
-
-55 fBodyAccJerkstdZ
-
-56 fBodyGyromeanX
-
-57 fBodyGyromeanY
-
-58 fBodyGyromeanZ
-
-59 fBodyGyrostdX
-
-60 fBodyGyrostdY
-
-61 fBodyGyrostdZ
-
-62 fBodyAccMagmean
-
-63 fBodyAccMagstd
-
-64 fBodyBodyAccJerkMagmean
-
-65 fBodyBodyAccJerkMagstd
-
-66 fBodyBodyGyroMagmean
-
-67 fBodyBodyGyroMagstd
-
-68 fBodyBodyGyroJerkMagmean
-
-69 fBodyBodyGyroJerkMagstd
+38 fBodyBodyGyroJerkMagstd
