@@ -58,13 +58,14 @@ Victor_The_Cleaner<-function(){
         colnames(test_Y)<-"activity"
         colnames(train_Y)<-"activity"
         ## a new variable is created identifying subject groups
+        ## all training and test variables are bound
         Training<-cbind(train_subj,train_Y,"group"=rep("TRAINING",times=seq_along(nrow(train_Y))))
         Test<-cbind(test_subj,test_Y,"group"=rep("TEST",times=seq_along(nrow(test_Y))))
         full_Training<-cbind(Training,train_X)
         full_Test<-cbind(Test,test_X)
-        
+        ## training and test data sets are merged
         merged_set<-rbind(full_Training,full_Test)
-        
+        ## variable headers are cleand up
         test_names<-grep("mean\\(\\)",names(merged_set))
         test_names2<-grep("std\\(\\)",names(merged_set))
         test_names3<-sort(c(test_names,test_names2))
@@ -72,6 +73,6 @@ Victor_The_Cleaner<-function(){
         large_merged<-merged_set[,c(1:3,test_names3)]
         names(large_merged)<-gsub("\\()","",names(large_merged))
         names(large_merged)<-gsub("-","",names(large_merged))
-        
+        ## a smaller tidy data set is created using activity averages per subject
         Activity_averages<<-summarise_each(group_by(large_merged,subject,activity,group),funs(mean))
 }
