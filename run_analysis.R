@@ -10,7 +10,7 @@ Victor_The_Cleaner<-function(){
         ## The following gives headers to the raw data
         colnames(test_X)<-names$V2
         colnames(train_X)<-names$V2
-        
+        ## gives the Activity Codes proper names
         for(i in seq_along(test_Y$V1)){
                 if(test_Y[i,1]=="1"){
                         test_Y[i,1]<-"WALKING"
@@ -52,15 +52,14 @@ Victor_The_Cleaner<-function(){
                         train_Y[i,1]<-"LAYING"
                 }
         }
-        
+        #Headers are provided for the subject and activity files
         colnames(test_subj)<-"subject"
         colnames(train_subj)<-"subject"
         colnames(test_Y)<-"activity"
         colnames(train_Y)<-"activity"
-        
+        ## a new variable is created identifying subject groups
         Training<-cbind(train_subj,train_Y,"group"=rep("TRAINING",times=seq_along(nrow(train_Y))))
         Test<-cbind(test_subj,test_Y,"group"=rep("TEST",times=seq_along(nrow(test_Y))))
-        
         full_Training<-cbind(Training,train_X)
         full_Test<-cbind(Test,test_X)
         
