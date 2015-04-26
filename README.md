@@ -30,4 +30,4 @@ IV. At this point the two files were merged using the rbind command.
 
 V. Cleaning: Within the larger merged file, all columns not related to reading means or standard deviations were removed, reducing the number of observational variables from 561 to 66.Other characters, such as dashes and parentheses were also removed to make the variables more readable.  After due consideration, the capital letters were left in order for the reader to differentiate key words.
 
-VI. The smaller tidy data set was then created by grouping the data using the dplyr package by subject and activity, and summarizing data by presenting the averages of the means and standard deviations of the variables in questions. Axial data were then merged into two columns: one identifying the axis, and the other giving the values for the variables
+VI. The smaller tidy data set was then created by grouping the data using the dplyr package by subject and activity, and summarizing data by presenting the averages of the means and standard deviations of the variables in questions. Data was kept in "Wide Form".
